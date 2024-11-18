@@ -1,0 +1,110 @@
+/* login.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #1c1c1c); /* Gradient background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link Styles */
+a {
+    color: #ff6347; /* Tomato color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+
+/* Info Text Styles */
+.info-text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 100px auto; /* Center the form */
+    padding: 20px;
+    background: rgba(28, 28, 28, 0.9); /* Semi-transparent dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: none; /* Remove default border */
+}
+
+/* Legend Styles */
+legend {
+    color: #00bcd4; /* Cyan color for legend */
+    font-size: 1.5em; /* Larger font size */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text color */
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #00bcd4; /* Highlight border on focus */
+    background-color: #444; /* Slightly lighter background on focus */
+    outline: none;
+}
+
+/* Button Styles */
+input[type="reset"],
+input[type="submit"] {
+    background-color: #00bcd4; /* Button color */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #0097a7; /* Darker button color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Captcha Styles */
+.unselectable {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff6347; /* Tomato color for captcha */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+#todo{
+    background-color: rgb(67, 44, 118);
+}

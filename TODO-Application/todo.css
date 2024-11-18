@@ -1,0 +1,107 @@
+/* todo.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link Styles */
+a {
+    color: #00bcd4; /* Cyan color for links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* User Welcome Message */
+#user {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+form {
+    max-width: 750px; /* Increased max-width by 25% */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark gray background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 15px; /* Increased padding for larger input */
+    margin: 10px 0;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text color */
+    font-size: 1.2em; /* Larger font size */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #00bcd4; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    background-color: #00bcd4; /* Button color */
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding for larger button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em; /* Larger font size */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0097a7; /* Darker button color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Task List Styles */
+.task-list {
+    max-width: 750px; /* Increased max-width by 25% */
+    margin: 20px auto; /* Center the task list */
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark gray background for the task list */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-item {
+    padding: 15px; /* Increased padding for larger task items */
+    border-bottom: 1px solid #444; /* Dark border for task items */
+    font-size: 1.2em; /* Larger font size for task items */
+}
+
+.task-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form, .task-list {
+        width: 90%; /* Keep it responsive */
+    }
+}
+#user{
+    color: rgb(0, 0, 0);
+    background-color: #685eb1;
+}
+#todo{
+    background-color: #685eb1;
+}
